@@ -43,7 +43,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeInformation", "Empl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValueTypeVsReferenceType", "ValueTypeVsReferenceType\ValueTypeVsReferenceType.csproj", "{4F5B91DE-0DA9-400F-B705-411CF8E1FA24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccount", "BankAccount\BankAccount.csproj", "{5C356847-4DFE-4B63-A7D9-F301E3AFED2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAccount", "BankAccount\BankAccount.csproj", "{5C356847-4DFE-4B63-A7D9-F301E3AFED2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringBuilder", "StringBuilder\StringBuilder.csproj", "{AFA50434-83BC-4850-9272-C47A02993FC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{5C356847-4DFE-4B63-A7D9-F301E3AFED2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C356847-4DFE-4B63-A7D9-F301E3AFED2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C356847-4DFE-4B63-A7D9-F301E3AFED2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFA50434-83BC-4850-9272-C47A02993FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFA50434-83BC-4850-9272-C47A02993FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFA50434-83BC-4850-9272-C47A02993FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFA50434-83BC-4850-9272-C47A02993FC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
