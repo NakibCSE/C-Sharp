@@ -47,6 +47,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAccount", "BankAccount\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringBuilder", "StringBuilder\StringBuilder.csproj", "{AFA50434-83BC-4850-9272-C47A02993FC3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParameterModifier", "ParameterModifier\ParameterModifier.csproj", "{BDA57F15-8654-4B17-8575-20177A363222}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{AFA50434-83BC-4850-9272-C47A02993FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFA50434-83BC-4850-9272-C47A02993FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFA50434-83BC-4850-9272-C47A02993FC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDA57F15-8654-4B17-8575-20177A363222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDA57F15-8654-4B17-8575-20177A363222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDA57F15-8654-4B17-8575-20177A363222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDA57F15-8654-4B17-8575-20177A363222}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
