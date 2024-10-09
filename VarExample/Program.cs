@@ -7,7 +7,7 @@ object o = 5;
 o = "Hello Hi";
 o = 33.3;
 
-
+var r = sum(12,10);
 
 int sum(int x, int y)
 {
