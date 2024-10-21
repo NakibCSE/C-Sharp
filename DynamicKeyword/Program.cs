@@ -1,3 +1,4 @@
 ﻿object o = new { Name = "Nakib Khan", age = 23 };
+
 dynamic d = o;
-Console.WriteLine(d.Address);
+Console.WriteLine(d.Name);
