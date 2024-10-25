@@ -16,6 +16,12 @@ namespace EntityFrameworkExample
                 optionsBuilder.UseSqlServer(_connectionString);
             base.OnConfiguring(optionsBuilder); 
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Topic>().ToTable("Topics");
+            base.OnModelCreating(modelBuilder);
+        }
         public DbSet<Course> Courses { get; set; } 
     }
 }

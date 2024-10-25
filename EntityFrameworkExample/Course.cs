@@ -15,5 +15,6 @@ namespace EntityFrameworkExample
         public bool IsActive { get; set; }
         public DateTime StartDate { get; set; }
 
+        public List<Topic> Topics { get; set; }
     }
 }
