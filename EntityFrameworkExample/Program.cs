@@ -1,8 +1,12 @@
 ﻿using EntityFrameworkExample;
+using System.Diagnostics.Contracts;
 using System.Globalization;
 
 using TrainingDbContext trainingDbContext = new TrainingDbContext();
 
+/***********************************************************************
+ *  Example 1 with single table
+ * *********************************************************************
 
 //Example 01 with single table
  
@@ -38,8 +42,13 @@ trainingDbContext.SaveChanges();
 trainingDbContext.Courses.Remove(csharpCourse);
 trainingDbContext.SaveChanges();
 
+*****************************************************/
 
 // Example 02 : with multitable
+
+/**************************
+ * One to many relationship example
+ * *************************
 
 Course course1 = new Course();
 course1.Title = "Laravel";
@@ -65,4 +74,37 @@ course1.Topics.Add(topic2);
 course1.Topics.Add(topic1);
 
 trainingDbContext.Courses.Add(course1);
+trainingDbContext.SaveChanges();
+**********************/
+
+Course course = new Course();
+course.Title = "DevOps Course";
+course.Fees = 28000;
+course.IsActive = false;
+course.StartDate = new DateTime(2024, 8, 8);
+
+Topic topic = new Topic();
+topic.Name = "Basic Syntex";
+topic.Duration = 100;
+
+course.Topics = new List<Topic>();
+course.Topics.Add(topic); 
+
+Student student = new Student();
+student.Name = "Nakib Khan";
+
+Student student1 = new Student();
+student1.Name = "Tamim Khan";
+
+CourseEnrollment enrollment = new CourseEnrollment();
+enrollment.student = student;
+
+CourseEnrollment courseEnrollment1 = new CourseEnrollment();
+courseEnrollment1.student = student1;
+
+course.MyCourses = new List<CourseEnrollment>();
+course.MyCourses.Add(courseEnrollment1);
+course.MyCourses.Add(enrollment);
+
+trainingDbContext.Courses.Add(course);
 trainingDbContext.SaveChanges();
