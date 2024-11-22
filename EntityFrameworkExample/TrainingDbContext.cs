@@ -22,6 +22,24 @@ namespace EntityFrameworkExample
             modelBuilder.Entity<CourseEnrollment>().HasKey((x) => new { x.CourseId, x.StudentId});
             modelBuilder.Entity<Topic>().ToTable("Topics");
             modelBuilder.Entity<CourseEnrollment>().ToTable("CourseEnrollments");
+            modelBuilder.Entity<Course>().Property(x => x.Title).HasMaxLength(50);
+            //For one to one
+            modelBuilder.Entity<Course>()
+                .HasMany(x => x.Topics)
+                .WithOne(y => y.Course)
+                .HasForeignKey(z => z.CourseID);
+
+            //For many to many
+            modelBuilder.Entity<CourseEnrollment>()
+                .HasOne(x => x.course)
+                .WithMany(y => y.MyCourses)
+                .HasForeignKey(z => z.CourseId);
+
+            modelBuilder.Entity<CourseEnrollment>()
+                .HasOne(x => x.student)
+                .WithMany(y => y.CourseStuddents)
+                .HasForeignKey(z => z.StudentId);
+
             base.OnModelCreating(modelBuilder);
         }
         public DbSet<Course> Courses { get; set; }

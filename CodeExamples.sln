@@ -65,7 +65,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericCollection", "Generi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdoNetExample", "AdoNetExample\AdoNetExample.csproj", "{7CC56077-0F08-478C-A716-B6324BA06A1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkExample", "EntityFrameworkExample\EntityFrameworkExample.csproj", "{00F5620B-5BD0-4FC9-A455-1737CCD859BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkExample", "EntityFrameworkExample\EntityFrameworkExample.csproj", "{00F5620B-5BD0-4FC9-A455-1737CCD859BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileAndDirectory", "FileAndDirectory\FileAndDirectory.csproj", "{3877E0A4-04EA-4A0C-96D0-36EFC7C14A59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -201,6 +203,10 @@ Global
 		{00F5620B-5BD0-4FC9-A455-1737CCD859BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00F5620B-5BD0-4FC9-A455-1737CCD859BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00F5620B-5BD0-4FC9-A455-1737CCD859BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3877E0A4-04EA-4A0C-96D0-36EFC7C14A59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3877E0A4-04EA-4A0C-96D0-36EFC7C14A59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3877E0A4-04EA-4A0C-96D0-36EFC7C14A59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3877E0A4-04EA-4A0C-96D0-36EFC7C14A59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

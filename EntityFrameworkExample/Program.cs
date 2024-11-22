@@ -88,7 +88,10 @@ topic.Name = "Basic Syntex";
 topic.Duration = 100;
 
 course.Topics = new List<Topic>();
-course.Topics.Add(topic); 
+course.Topics.Add(topic);
+
+trainingDbContext.Courses.Add(course);
+trainingDbContext.SaveChanges();
 
 Student student = new Student();
 student.Name = "Nakib Khan";
@@ -105,6 +108,4 @@ courseEnrollment1.student = student1;
 course.MyCourses = new List<CourseEnrollment>();
 course.MyCourses.Add(courseEnrollment1);
 course.MyCourses.Add(enrollment);
-
-trainingDbContext.Courses.Add(course);
-trainingDbContext.SaveChanges();
+ 
